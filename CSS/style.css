@@ -5,12 +5,16 @@ body {
     background-color: black;
 }
 /*mise en forme du header*/
+header {
+    height: 900px;
+    background-image: url(../assets/Illustrations/Bathome1.png);
+}
 .top-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #333;
+    
 }
 /*taille du logo et emplacement des liste sur la barre de navigation*/
 .logo img {
@@ -34,7 +38,7 @@ nav ul li a {
 }
 /*mise en forme du texte d'introduction*/
 .intro {
-    margin-top: 20px;
+    margin-top: 160px;
     padding: 0 20px;
     text-align: center;
 }
