@@ -1,16 +1,18 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    color: white;
+    background-color: black;
 }
 /*mise en forme du header*/
-header {
+.top-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    color: white;
+    background-color: #333;
 }
-/*taille du logo et emplacement des liste*/
+/*taille du logo et emplacement des liste sur la barre de navigation*/
 .logo img {
     height: 50px; 
 }
@@ -29,4 +31,10 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
+}
+/*mise en forme du texte d'introduction*/
+.intro {
+    margin-top: 20px;
+    padding: 0 20px;
+    text-align: center;
 }
