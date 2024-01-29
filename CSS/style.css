@@ -1,30 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&display=swap');
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'space grotesk', sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
     color: white;
     background-color: black;
 }
 /*mise en forme du header*/
 header {
-    height: 900px;
+    height: auto;
     background-image: url(../assets/Illustrations/Bathome1.png);
 }
+
 .top-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    
 }
-/*taille du logo et emplacement des liste sur la barre de navigation*/
+
 .logo img {
-    height: 50px; 
+    height: auto;
+    margin-left: 150px;
 }
+
+
 
 nav ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    margin-right: 150px;
     display: flex;
 }
 
@@ -36,9 +40,60 @@ nav ul li a {
     color: white;
     text-decoration: none;
 }
+
 /*mise en forme du texte d'introduction*/
 .intro {
-    margin-top: 160px;
-    padding: 0 20px;
+    margin-top: 350px;
     text-align: center;
+}
+/*mise en forme des boutons header*/
+.bouton-header {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 65px;
+}
+.hero {    
+    margin-right: 5px;
+}
+.mechant {
+    margin-left: 50px;
+}
+.hero, .mechant { 
+    font-family: 'Rajdhani';
+    font-style: normal;
+    font-size: 20px;
+    color: white;
+    padding: 22px 49px;
+    margin-left: 50px;
+    background-color: transparent;
+    background-image: linear-gradient(to right, rgba(237, 222, 191, 0.4) 0%, rgba(137, 0, 8, 0.4) 100%);
+    transition: transform 0.3s linear;
+    border: none;
+    cursor: pointer;
+}
+.logo-fleche {
+    text-align: center;
+    margin-top: 190px;
+
+}
+
+/*les effets hover */
+.logo img:hover {
+    filter: sepia(100%) saturate(1500%) hue-rotate(15deg) brightness(110%);
+}
+.home:active,
+.home:hover,
+.home:focus {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.image:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+.hero:hover, .mechant:hover {
+    background-image: linear-gradient(to right, rgba(237, 222, 191, 1) 0%, rgba(137, 0, 8, 1) 100%);
 }
