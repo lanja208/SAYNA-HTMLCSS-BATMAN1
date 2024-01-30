@@ -9,7 +9,7 @@ body {
 }
 /*mise en forme du header*/
 header {
-    height: auto;
+    height: max-content;
     background-image: url(../assets/Illustrations/Bathome1.png);
 }
 
@@ -62,7 +62,7 @@ nav ul li a {
 }
 .hero, .mechant { 
     font-family: 'Rajdhani';
-    font-style: normal;
+    font-style: medium;
     font-size: 20px;
     color: white;
     padding: 22px 49px;
@@ -96,4 +96,53 @@ nav ul li a {
 }
 .hero:hover, .mechant:hover {
     background-image: linear-gradient(to right, rgba(237, 222, 191, 1) 0%, rgba(137, 0, 8, 1) 100%);
+}
+/*mise en formre du contenu principale*/
+.container {
+    font-size: 18px;
+    font-style: medium;
+    margin-left: 150px;
+}
+/*mise en forme des images premier section*/
+.first-section .image-hero {
+    display: flex;
+    flex-direction: row;
+    gap: 63px;
+}
+/*mise en forme des images deuxieme section*/
+.second-section .image-mechant {
+    display: flex;
+    flex-direction: row;
+    gap: 63px;
+}
+.bat-logo img {
+    height: 129px;
+    margin-left: 80px;
+}
+.bat-container {
+    margin-top: -63px;
+}
+/*mise en forme des images troisieme section*/
+.third-section .image-allie {
+    display: flex;
+    flex-direction: row;
+    gap: 63px;
+}
+.third-section .flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.third-section .bat img {
+    margin-top: -236px;
+    margin-left: 2%;
+}
+.third-section .third-para-content {
+    margin-top: -4px; 
+}
+/*mise en forme des images quatrieme section*/
+.image-justice img {
+    margin-left: -150px;
+    height: 598px;
+   
 }
