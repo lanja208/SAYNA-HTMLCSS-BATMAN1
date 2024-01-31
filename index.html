@@ -184,6 +184,39 @@
             </video>
         </div>
     </section>
+    <section class="last-section">
+        <h2>PRENONS CONTACT</h2>
+        <form action="#" method="post">
+            <label for="emailInput">ADRESSE EMAIL</label>
+            <input type="email" id="emailInput" name="email" placeholder="Adresse e-mail">
+
+            <label for="checkBox">NEWSLETTER</label>
+            <label for="checkBox">
+                En cochant cette case vous acceptez de recevoir l’actualité concernant les aventures de Batman :
+                <input type="checkbox" id="checkBox" name="subscribe" value="subscribe">
+            </label>
+
+            <label for="selectBox">Choisir la fréquence à laquelle vous souhaitez recevoir votre newsletter </label>
+            <select id="selectBox" name="dropdown">
+              <option value="option1">Une fois par semaine</option>
+              <option value="option2">Une fois toutes les duex semaines (2fois par mois)</option>
+              <option value="option3">Une fois par mois</option>
+              <option value="option4">Une fois tous les trois mois</option>
+              <option value="option5">Une fois tous les six mois</option>
+            </select>
+
+            <div id="buttonGroup">
+                <button type="button" name="choice" value="option1">Des films</button>
+                <button type="button" name="choice" value="option2">Des comics</button>
+                <button type="button" name="choice" value="option3">De tous</button>
+            </div>
+            
+            <label for="message">Laisser un commentaire pour la communauté :</label>
+                <textarea id="message" name="message" placeholder="Votre message"></textarea>
+
+            <input type="submit" value="CONFIRMER">
+          </form>
+    </section>
     </main>
 </body>
 </html>

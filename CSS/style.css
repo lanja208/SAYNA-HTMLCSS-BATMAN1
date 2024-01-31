@@ -193,3 +193,43 @@ nav ul li a {
     margin-top: 206px;
 }
 
+/*mise en forme de prise de contact*/
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 500px; 
+    margin: 0 auto;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#choice {
+    display: flex;
+    flex-direction: column;
+}
+
+#choice button {
+    margin-top: 5px;
+}
+
+input[type="submit"] {
+    margin-top: 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
