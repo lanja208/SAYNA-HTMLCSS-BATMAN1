@@ -32,8 +32,8 @@
             <h2>Il est Batman.</h2>
         </div>
         <div class="bouton-header">
-            <button class="hero">VOIR LES HEROS</button>
-            <button class="mechant">VOIR LES MECHANTS</button>
+            <a href="#heros"><button class="hero">VOIR LES HEROS</button></a>
+            <a href="#mechants"><button class="mechant">LES ADVERSAIRES</button></a>
         </div>
         <div class="logo-fleche">
             <img src="assets/Logos/flèche_down_header.png" alt="flèche vers le bas">
@@ -41,9 +41,9 @@
     </header>
     <!--ceci est le contenu principale-->
     <main class="container">
-    <section class="first-section">
+    <section class="first-section" id="heros">
         <div class="first-para">
-            <h2>BATMAN AU CINÉMA</h2>
+            <h1>BATMAN AU CINÉMA</h1>
             <p>Le personnage de Batman est un super héros de l’univers de DC Comics. Il a été créé par le <br>
                 dessinateur Bob Kane et le scénariste Bill Finger et apparaît pour la première fois dans le <br>
                 comic book Detective Comics en 1939. Batman se différencie de Superman, alors héros <br>
@@ -68,14 +68,15 @@
             </div>
         </div>
     </section>
-    <section class="second-section">
+    <!--deuxieme section NEMESIS-->
+    <section class="second-section" id="mechants">
         
         <div class="second-para">
             <div class="bat-logo">
                 <img src="assets/Illustrations/Bathome13.png" alt="logo batman">
             </div>
             <div class="bat-container">
-                <h2>NÉMÉSIS</h2>
+                <h1>NÉMÉSIS</h1>
             
                 <p>Batman souhaite éradiquer la criminalité de Gotham. C’est pourquoi, il affrontera la plupart <br>
                 du temps, des vilains sans capacités surnaturelles mais particulièrement violents ou <br>
@@ -102,10 +103,12 @@
             </div>
         </div>
     </section>
+
+    <!--la section ALLIES-->
     <section class="third-section">
         <div class="third-para">
             <div class="flex-container">
-            <h2>ALLIES</h2>
+            <h1>ALLIES</h1>
             <div class="bat">
                 <img src="assets/Illustrations/Bathome12.png" alt="photo de batman">
             </div>
@@ -138,9 +141,10 @@
             </div>
         </div>
     </section>
+        <!--La section JUSTICE LEAGUE-->
     <section class="fourth-section">
         <div class="fourth-para">
-            <h2>JUSTICE LEAGUE</h2>
+            <h1>JUSTICE LEAGUE</h1>
             <p>Lorsque la Terre est menacée les plus grands super-héros s’allient pour la protéger. Ils <br>
                 doivent cependant apprendre à se faire confiance mutuellement et à faire équipe ce qui ne <br>
                 sera pas chose aisée. Ensemble ils forment la Justice League, les plus grands super-héros de <br>
@@ -153,9 +157,10 @@
             <img src="assets/Illustrations/Bathome11.png" alt="image d'Alfred">
         </div>
     </section>
+        <!--La section contenu multimedia-->
     <section class="fift-section">
         <div class="fift-para">
-            <h2>MULTIMEDIA</h2>
+            <h1>MULTIMEDIA</h1>
         </div>
         <div class="last-container">
         <div class="image-bat">
@@ -182,8 +187,9 @@
             </video>
         </div>
     </section>
+        <!--La section CONTACT-->
     <section class="last-section">
-        <h2>PRENONS CONTACT</h2>
+        <h1>PRENONS CONTACT</h1>
         <form action="#" method="post">
             <label for="emailInput">ADRESSE EMAIL</label>
             <input type="email" id="emailInput" name="email" placeholder="Adresse e-mail">
