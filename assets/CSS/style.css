@@ -13,7 +13,7 @@ body {
 /*mise en forme du header*/
 header {
     height: max-content;
-    background-image: url(../assets/Illustrations/Bathome1.png);
+    background-image: url(../Illustrations/Bathome1.png);
 }
 
 .top-header {
