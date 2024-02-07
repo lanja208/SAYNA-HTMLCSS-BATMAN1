@@ -10,10 +10,10 @@
    <!ceci est l'entête du page>
     <header>
         <div class="top-header">
-            <div class="logo">
-                <img src="assets/Logos/logohome.png" alt="logo batman">
-            </div>
             <nav class="nav-bar">
+                <div class="logo">
+                    <a href="index.html"><img src="assets/Logos/logohome.png" alt="logo batman"></a>
+                </div>
                 <div class="nav-link">
                     <ul>
                         <li class="home active"><a href="index.html" class="menu-item">HOME</a></li>
@@ -190,10 +190,12 @@
             <label for="emailInput">ADRESSE EMAIL</label>
             <input type="email" id="emailInput" name="email" placeholder="Adresse e-mail">
 
-            <label for="checkBox">NEWSLETTER</label>
-            <label for="checkBox">
-                En cochant cette case vous acceptez de recevoir l’actualité concernant les aventures de Batman :
-                <input type="checkbox" id="checkBox" name="subscribe" value="subscribe">
+            <label for="checkBox" class="newsletter-checkbox">
+                NEWSLETTER
+                <span>
+                    En cochant cette case vous acceptez de recevoir l’actualité concernant les aventures de Batman :
+                    <input type="checkbox" id="checkBox" name="subscribe" value="subscribe">
+                </span>
             </label>
 
             <label for="selectBox">Choisir la fréquence à laquelle vous souhaitez recevoir votre newsletter </label>
