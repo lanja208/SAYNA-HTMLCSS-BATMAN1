@@ -167,9 +167,10 @@
             <img src="assets/Illustrations/Bathome_ba1.png" alt="image d'Alfred">
         </div>
         <div class="last-para">
-            <p>ACTION, ADVENTURE</p>
-            <p>Batman Begins</p>
-            <p>IMDB : 8.2</p>
+            <h2>ACTION, ADVENTURE</h2>
+            <h3>Batman Begins</h3>
+            
+            <p>IMDB : <span> 8.2</p></span>
             <p>Le jeune Bruce Wayne assiste impuissant au meurtre de ses parents. Profondément <br>
                 traumatisé, il grandit obnubilé par un désir de vengeance. La Ligue des ombres, une secte de <br>
                 guerriers ninja dirigée par Ra's al Ghul, se chargera de son entraînement. De retour chez lui à <br>
@@ -187,9 +188,10 @@
             </video>
         </div>
     </section>
-        <!--La section CONTACT-->
+        <!--La section du formulaire-->
     <section class="last-section">
-        <h1>PRENONS CONTACT</h1>
+        <div>
+        <h2>PRENONS CONTACT</h2>
         <form action="#" method="post">
             <label for="emailInput">ADRESSE EMAIL</label>
             <input type="email" id="emailInput" name="email" placeholder="Adresse e-mail">
@@ -198,11 +200,15 @@
                 NEWSLETTER
                 <span>
                     En cochant cette case vous acceptez de recevoir l’actualité concernant les aventures de Batman :
-                    <input type="checkbox" id="checkBox" name="subscribe" value="subscribe">
                 </span>
+                    <input type="checkbox" id="checkBox" name="subscribe" value="subscribe">
+                
             </label>
 
             <label for="selectBox">Choisir la fréquence à laquelle vous souhaitez recevoir votre newsletter </label>
+            <span>
+                <img src="assets/Logos/icon_flèche_2.png" alt="">
+            </span>
             <select id="selectBox" name="dropdown">
               <option value="option1">Une fois par semaine</option>
               <option value="option2">Une fois toutes les duex semaines (2fois par mois)</option>
@@ -210,44 +216,59 @@
               <option value="option4">Une fois tous les trois mois</option>
               <option value="option5">Une fois tous les six mois</option>
             </select>
+        
 
             <div id="buttonGroup">
-                <button type="button" name="choice" value="option1">Des films</button>
-                <button type="button" name="choice" value="option2">Des comics</button>
-                <button type="button" name="choice" value="option3">De tous</button>
+                <p>souhaitez vous recevoir des news</p>
+                <button type="button" name="choice" value="option1"><a href="">Des films</a></button>
+                <button type="button" name="choice" value="option2"><a href="">Des comics</a></button>
+                <button type="button" name="choice" value="option3"><a href="">De tous</a></button>
             </div>
             
             <label for="message">Laisser un commentaire pour la communauté :</label>
-                <textarea id="message" name="message" placeholder="Votre message"></textarea>
+                <textarea id="message" name="message"  placeholder="Laissez un commentaire pour la communauté"></textarea>
 
             <input type="submit" value="CONFIRMER">
           </form>
+        </div>
     </section>
-    </main>
-    <footer>
+    <section>
         <div class="citation">
             <div class="guillemet">
                 <img src="assets/Logos/icon_guillemets_1.png" alt="guillemet ouvrant">
             </div>
             <div class="texte">
-                <p>La seule façon raisonnable de vivre en ce bas mondes, <br>c'est en dehors des règles.</p>
-                <p>The Dark Knight : le chevalier noir - <br>Le Joker à Batman (2008)</p>
+                <div>
+                    <p>La seule façon raisonnable de vivre en ce bas mondes, <br>c'est en dehors des règles.</p>
+                </div>
+                <div>
+                    <p>The Dark Knight : le chevalier noir - <br>Le Joker à Batman (2008)</p>
+                </div>
             </div>
             <div class="guillemet2">
                 <img src="assets/Logos/icon_guillemets_2.png" alt="guillemet fermant">
             </div>
         </div>
-        <div class="text-logo">
-            <img src="assets/Logos/icon_WB.png" alt="icon WB">
-            <p>Ce projet respecte l'univers cinématographique des films Batman récents. Version Nolan & Snyder & Reeves</p>
-        </div>
-        <div class="logos">
-            <img src="assets/Logos/logo_sayna_white.png" alt="logo SAYNA">
-            <img src="assets/Logos/icon_x.png" alt="icon x">
-            <img src="assets/Logos/icon_DC.png" alt="icon DC">
-            <img src="assets/Logos/icon_facebook.png" alt="facebook">
-            <img src="assets/Logos/icon_ig.png" alt="instagram">
-            <img src="assets/Logos/icon_tw.png" alt="twiter">
+    </section>
+    </main>
+    <footer>
+        <div>
+            <div class="text-logo">
+                <span>
+                    <img src="assets/Logos/icon_WB.png" alt="icon WB">
+                    <p>Ce projet respecte l'univers cinématographique des films Batman récents. Version Nolan & Snyder & Reeves</p>
+                </span>
+            </div>
+            <div class="logos">
+                <a href="#">
+                    <img src="assets/Logos/logo_sayna_white.png" alt="logo SAYNA">
+                    <img src="assets/Logos/icon_x.png" alt="icon x">
+                    <img src="assets/Logos/icon_DC.png" alt="icon DC">
+                </a>
+                <a href="https://web.facebook.com/batmanonlinecom/?_rdc=1&_rdr" target="_blank"><img src="assets/Logos/icon_facebook.png" alt="facebook"></a>
+                <a href="https://www.instagram.com/batman/?hl=fr" target="_blank"><img src="assets/Logos/icon_ig.png" alt="instagram"></a>
+                <a href="https://twitter.com/Batman" target="_blank"><img src="assets/Logos/icon_tw.png" alt="twiter"></a>
+            </div>
         </div>
     </footer>
 </body>
