@@ -12,7 +12,7 @@
         <div id="hero">
             <nav class="container">
                 <div class="logo">
-                    <a href="index.html"><img src="assets/Logos/logohome.png" alt="logo batman"></a>
+                    <a href="#"><img src="assets/Logos/logohome.png" alt="logo batman"></a>
                 </div>
                 <div class="nav-link">
                     <ul>
@@ -55,6 +55,7 @@
         <img src="assets/Logos/logo_bat_flèche_2.png" alt="">
         
     </div>  
+    <!--section batman au cinema-->
         <section class="first-section" id="heros">
         <div class="container">
             <div class="first-para">
@@ -149,7 +150,9 @@
         <div class="container">
         <div class="third-para">
             <div class="flex-container">
-                <h1>ALLIES</h1>
+                <div class="titre">
+                    <h1>ALLIES</h1>
+                </div>
             
                 <div class="bat">
                     <img src="assets/Illustrations/Bathome12.png" alt="photo de batman">
@@ -170,7 +173,7 @@
                 <div class="Alfred">
                     <img src="assets/Illustrations/Bathome9.png" alt="image d'Alfred">
                     <div class="pers-info">
-                        <h3 class="Alfred-title">Alfred Pennyworth - Michael Cain</h3>
+                        <h3 class="Alfred-title">Alfred Pennyworth- <br>Michael Cain</h3>
                         <p>(2006 - 2008 - 2012)</p>
                     </div>
                 </div>
@@ -209,7 +212,7 @@
     </div>
 
         <div class="image-justice">
-            <img width="100%" src="assets/Illustrations/Bathome11.png" alt="image d'Alfred">
+            <img width="100%" src="assets/Illustrations/Bathome11.png" alt="image de ma team justice league'">
         </div>
     
     </section>
@@ -235,7 +238,7 @@
                 <h2>ACTION, ADVENTURE</h2>
                 <h3>Batman Begins</h3>
             
-                <p>IMDB : <span> 8.2</p></span>
+                <p>IMDB : <span class="yellow"> 8.2</span></p>
                 <p>Le jeune Bruce Wayne assiste impuissant au meurtre de ses parents. Profondément <br>
                 traumatisé, il grandit obnubilé par un désir de vengeance. La Ligue des ombres, une secte de <br>
                 guerriers ninja dirigée par Ra's al Ghul, se chargera de son entraînement. De retour chez lui à <br>
@@ -252,50 +255,50 @@
         </div>
     </section>
         <!--La section du formulaire-->
-    <section class="last-section">
-        <div class="container">
+    <section id="contact">
+        <div class="form">
         <h2>PRENONS CONTACT</h2>
         <form action="#" method="post">
-            <label for="emailInput">ADRESSE EMAIL</label>
-            <input type="email" id="emailInput" name="email" placeholder="Adresse e-mail">
+            <label for="emailInput" class="titre">ADRESSE EMAIL</label>
+            <input type="email" id="emailInput" name="email" placeholder="Adresse e-mail" >
 
-            <label for="checkBox" class="newsletter-checkbox">
-                NEWSLETTER
-                <span>
+            <label for="checkBox"  class="titre">
+                NEWSLETTER </label>
+                <label for="checkbox">
                     En cochant cette case vous acceptez de recevoir l’actualité concernant les aventures de Batman :
-                </span>
-                    <input type="checkbox" id="checkBox" name="subscribe" value="subscribe">
-                
-            </label>
-
-            <label for="selectBox">Choisir la fréquence à laquelle vous souhaitez recevoir votre newsletter </label>
-            <span>
-                <img src="assets/Logos/icon_flèche_2.png" alt="">
-            </span>
+                </label>
+                <input type="checkbox" >
+            
             <select id="selectBox" name="dropdown">
-              <option value="option1">Une fois par semaine</option>
-              <option value="option2">Une fois toutes les duex semaines (2fois par mois)</option>
-              <option value="option3">Une fois par mois</option>
-              <option value="option4">Une fois tous les trois mois</option>
-              <option value="option5">Une fois tous les six mois</option>
+            <option class="placeholder" value="" disabled selected>Choisir la fréquence à laquelle vous souhaitez recevoir votre newsletter</option>
+              <option class="valeur" value="option1">Une fois par semaine</option>
+              <option class="valeur" value="option2">Une fois toutes les duex semaines (2fois par mois)</option>
+              <option class="valeur" value="option3">Une fois par mois</option>
+              <option class="valeur" value="option4">Une fois tous les trois mois</option>
+              <option class="valeur" value="option5">Une fois tous les six mois</option>
             </select>
         
-
-            <div id="buttonGroup">
-                <p>souhaitez vous recevoir des news</p>
-                <button type="button" name="choice" value="option1"><a href="">Des films</a></button>
-                <button type="button" name="choice" value="option2"><a href="">Des comics</a></button>
-                <button type="button" name="choice" value="option3"><a href="">De tous</a></button>
+            <div class="news">
+                <p>souhaitez vous recevoir des news</p>  
+            </div>
+          
+            <div class="buttonGroup">
+                <input type="radio" id="film">
+                <label for="film">Des films</label>
+                <input type="radio" id="comics">
+                <label for="comis">Des comics</label>
+                <input type="radio" id="tout">
+                <label for="tout">De tout</label>
             </div>
             
-            <label for="message">Laisser un commentaire pour la communauté :</label>
-                <textarea id="message" name="message"  placeholder="Laissez un commentaire pour la communauté"></textarea>
+            <label for="message" class="titre">Laisser un commentaire pour la communauté :</label>
+                <textarea id="message" name="message" cols="30"  placeholder="Laissez un commentaire pour la communauté"></textarea>
 
             <input type="submit" value="CONFIRMER">
           </form>
         </div>
     </section>
-    <section>
+    <section class="replique">
         <div class="container">
         <div class="citation">
             <div class="guillemet">

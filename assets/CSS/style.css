@@ -79,6 +79,8 @@ nav ul li a {
     margin: 0 auto;
     margin-top: 300px;
 }
+
+
 /*mise en forme des boutons header*/
 .bouton-header {
 
@@ -125,9 +127,11 @@ nav ul li a {
     flex-direction: column;
     align-items: center;
     position: fixed;
+    width: 10PX;
     top: 220px;
-    right: 40px;
+    right: 50px;
     gap: 15px;
+    z-index: 10;
 }
 .carte{
     padding: 30px 30px 30px 0;
@@ -141,13 +145,15 @@ nav ul li a {
 .pers-info{
     text-align: center;
 }
-/*mise en forme des images premier section*/
+/*mise en forme de la section batman au cinema*/
 .first-section .image-hero {
     display: flex;
     flex-direction: row;
     gap: 35px;
 }
-/*mise en forme des images deuxieme section*/
+
+
+/*mise en forme de la section NEMESIS*/
 .second-section .image-mechant {
     display: flex;
     flex-direction: row;
@@ -160,7 +166,9 @@ nav ul li a {
 .bat-container {
     margin-top: -63px;
 }
-/*mise en forme des images troisieme section*/
+
+
+/*mise en forme de la section ALLIES*/
 .third-section .image-allie {
     display: flex;
     flex-direction: row;
@@ -172,11 +180,13 @@ nav ul li a {
     align-items: center;
 }
  .bat img {
-    margin-left: 30%;
-
+    position: absolute;
+    right: 15px;
+    top: 900px;
+    height: 200px;
+    flex: 1;
 }
 
-/*mise en forme des images quatrieme section*/
 
 /*mise en forme des images cinquième section*/
 .content-container {
@@ -217,82 +227,112 @@ nav ul li a {
     margin-top: 206px;
 }
 
+#multimedia button{
+    position: relative;
+    top: 155px;
+    background: none;
+    border: none;
+}
+#multimedia .yellow{
+    color: var(--yellow-color);
+}
+
+
 /*mise en forme de prise de contact*/
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-    max-width: 500px; /* Ajustez la largeur maximale selon vos besoins */
+#contact {
+    background-color: darkslategray;
+    padding: 70px 0;
+}
+#contact .form {
+    width: 50%;
     margin: 0 auto;
 }
 
-label {
-    margin-top: 10px;
+#contact h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 32px;
 }
 
-.newsletter-checkbox {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-top: 5px;
+#contact .titre {
+    display: block;
+    margin: 28px 0;
 }
-
-.newsletter-checkbox input[type="checkbox"] {
-    margin-top: 5px;
-}.newsletter-checkbox {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-top: 5px;
-}
-
-.newsletter-checkbox span {
-    display: flex;
-    align-items: center;
-    margin-top: 5px;
-}
-
-.newsletter-checkbox input[type="checkbox"] {
-    margin-left: 8px;
-}
-
-input, select, textarea {
-    width: 100%;
+input[type="email"], #selectBox, textarea  {
+    display: block;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    background-color: transparent;
+    width: 80%;
     padding: 8px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    border-bottom: 1px solid #ccc;
+    color: white;
+    font-size: 14px;
 }
 
-#choice {
+#selectBox .valeur{
+    color: black;
+}
+#contact .icon img{
+    transform: rotate(90deg);
+    width: 20px;
+}
+
+::-webkit-input-placeholder {
+    color:white;
+}
+::-moz-placeholder {
+    color:white;
+}
+::-ms-input-placeholder {
+    color:white;
+}
+::placeholder{
+    color:white;
+}
+
+#contact .news {
+    margin-top: 15px;
+    border-bottom: 1px solid #ccc;
+    width: 80%;
+}
+
+.buttonGroup {
+    padding-top: 30px;
     display: flex;
-    flex-direction: column;
+    justify-content: space-around;
+    font-size: 10px;
+}
+.form input[type="radio"] {
+    opacity: 0;
+}
+.buttonGroup label {
+    text-align: center;
+    width: 80px;
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid;
+    border-image: linear-gradient(to right, rgba(237, 222, 191, 0.5) 0%, rgba(137, 0, 8, 0.5) 100%) 1;
 }
 
-#choice button {
-    margin-top: 5px;
-}
-
-#choice button:last-child {
-    margin-right: 0;
-}
 
 textarea {
-    width: 100%;
-    padding: 8px;
     margin-bottom: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
     box-sizing: border-box;
 }
 
 input[type="submit"] {
+    display: block;
     margin-top: 20px;
-    background-color: #4caf50;
+    background-image: linear-gradient(to right, rgba(237, 222, 191, 1) 0%, rgba(137, 0, 8, 1) 100%);
     color: white;
     border: none;
-    padding: 10px 15px;
+    width: 240px;
+    margin: 0 auto;
+    padding: 20px ;
     border-radius: 4px;
     cursor: pointer;
 }
@@ -317,6 +357,9 @@ nav ul a:focus {
 .hero:hover, .mechant:hover {
     background-image: linear-gradient(to right, rgba(237, 222, 191, 1) 0%, rgba(137, 0, 8, 1) 100%);
 }
+
+
+
 /* effet des images du contenu */
 .carte img{
     transition: transform 0.3 ease;
@@ -324,6 +367,9 @@ nav ul a:focus {
 
 .carte img:hover{
     transform: scale(1.1);
+}
+.replique{
+    margin: 0 auto;
 }
 .foot {
     width: 80%;
