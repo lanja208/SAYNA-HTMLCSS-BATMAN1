@@ -48,11 +48,11 @@
     <main >
     <!--reseaux sociaux--> 
     <div class="social-media">
-        <img src="assets/Logos/logo_bat_flèche.png" alt="">
-        <img class="social" src="assets/logos/icon_facebook.png" alt="">
-        <img class="social" src="assets/Logos/icon_ig.png" alt="">
-        <img class="social" src="assets/Logos/icon_tw.png" alt="">
-        <img src="assets/Logos/logo_bat_flèche_2.png" alt="">
+        <a href="#hero"><img src="assets/Logos/logo_bat_flèche.png" alt="" title="Retour en haut de la page"></a>
+        <img class="social" src="assets/logos/icon_facebook.png" alt="" title="facebook">
+        <img class="social" src="assets/Logos/icon_ig.png" alt="" title="instagram">
+        <img class="social" src="assets/Logos/icon_tw.png" alt="" title="tweeter">
+        <a href="#contact"><img src="assets/Logos/logo_bat_flèche_2.png" alt="" title="acceder au formulaire"></a>
         
     </div>  
     <!--section batman au cinema-->
@@ -260,14 +260,14 @@
         <h2>PRENONS CONTACT</h2>
         <form action="#" method="post">
             <label for="emailInput" class="titre">ADRESSE EMAIL</label>
-            <input type="email" id="emailInput" name="email" placeholder="Adresse e-mail" >
+            <input type="email" id="emailInput" name="email" placeholder="Adresse e-mail" required>
 
             <label for="checkBox"  class="titre">
                 NEWSLETTER </label>
-                <label for="checkbox">
+                <label for="checkbox" class="checkbox">
                     En cochant cette case vous acceptez de recevoir l’actualité concernant les aventures de Batman :
                 </label>
-                <input type="checkbox" >
+                <input type="checkbox" required>
             
             <select id="selectBox" name="dropdown">
             <option class="placeholder" value="" disabled selected>Choisir la fréquence à laquelle vous souhaitez recevoir votre newsletter</option>
@@ -286,7 +286,7 @@
                 <input type="radio" id="film">
                 <label for="film">Des films</label>
                 <input type="radio" id="comics">
-                <label for="comis">Des comics</label>
+                <label for="comics">Des comics</label>
                 <input type="radio" id="tout">
                 <label for="tout">De tout</label>
             </div>
@@ -298,17 +298,17 @@
           </form>
         </div>
     </section>
-    <section class="replique">
-        <div class="container">
+    <section id="replique">
+    <div class="container">
         <div class="citation">
             <div class="guillemet">
                 <img src="assets/Logos/icon_guillemets_1.png" alt="guillemet ouvrant">
             </div>
             <div class="texte">
-                <div>
+                <div class="citation-texte">
                     <p>La seule façon raisonnable de vivre en ce bas mondes, <br>c'est en dehors des règles.</p>
                 </div>
-                <div>
+                <div class="auteur">
                     <p>The Dark Knight : le chevalier noir - <br>Le Joker à Batman (2008)</p>
                 </div>
             </div>
@@ -322,20 +322,19 @@
     <footer class="foot">
         <div class="container">
             <div class="text-logo">
-                <span>
+                
                     <img src="assets/Logos/icon_WB.png" alt="icon WB">
-                    <p>Ce projet respecte l'univers cinématographique des films Batman récents. Version Nolan & Snyder & Reeves</p>
-                </span>
+                    <span>Ce projet respecte l'univers cinématographique des films Batman récents. Version Nolan & Snyder & Reeves</span>
             </div>
-            <div class="logos">
-                <a href="#">
-                    <img src="assets/Logos/logo_sayna_white.png" alt="logo SAYNA">
+            <div class="logo-social">
+                <a href="#" class="social-item">
+                    <img src="assets/Logos/logo_sayna_white.png" alt="logo SAYNA" width="40px">
                     <img src="assets/Logos/icon_x.png" alt="icon x">
-                    <img src="assets/Logos/icon_DC.png" alt="icon DC">
+                    <img src="assets/Logos/icon_DC.png" alt="icon DC" width="40px">
                 </a>
-                <a href="https://web.facebook.com/batmanonlinecom/?_rdc=1&_rdr" target="_blank"><img src="assets/Logos/icon_facebook.png" alt="facebook"></a>
-                <a href="https://www.instagram.com/batman/?hl=fr" target="_blank"><img src="assets/Logos/icon_ig.png" alt="instagram"></a>
-                <a href="https://twitter.com/Batman" target="_blank"><img src="assets/Logos/icon_tw.png" alt="twiter"></a>
+                <a class="social-item" href="#" target="_blank"><img src="assets/Logos/icon_facebook.png" alt="facebook"></a>
+                <a class="social-item" href="#" target="_blank"><img src="assets/Logos/icon_ig.png" alt="instagram"></a>
+                <a class="social-item" href="#" target="_blank"><img src="assets/Logos/icon_tw.png" alt="twiter"></a>
             </div>
         </div>
     </footer>

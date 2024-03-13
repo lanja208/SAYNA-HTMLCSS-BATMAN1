@@ -16,6 +16,7 @@
     box-sizing: border-box;
 }
 
+
 body {
     font-family: 'space grotesk', sans-serif;
     font-size: 20px;
@@ -52,8 +53,14 @@ nav{
     top: 0;
 }
 
+
+
 .logo img {
     height: auto;
+}
+.logo img:hover {
+   
+    filter: sepia(100%) saturate(1500%) hue-rotate(3deg) brightness(110%);
 }
 
 nav ul {
@@ -70,7 +77,14 @@ nav ul li a {
     font-family: 'rajdhani';
     text-decoration: none;
 }
-
+nav ul a:active,
+nav ul a:hover,
+nav ul a:visited,
+nav ul a:focus {
+    font-weight: bold;
+    color: var(--yellow-color);
+    text-decoration: underline;
+}
 
 /*mise en forme du texte d'introduction*/
 
@@ -109,6 +123,11 @@ nav ul li a {
     border: none;
     cursor: pointer;
 }
+
+.hero:hover, .mechant:hover {
+    background-image: linear-gradient(to right, rgba(237, 222, 191, 1) 0%, rgba(137, 0, 8, 1) 100%);
+}
+
 .logo-fleche {
     text-align: center;
     margin-top: 190px;
@@ -133,12 +152,25 @@ nav ul li a {
     gap: 15px;
     z-index: 10;
 }
+.social-media img:hover {
+   
+    filter: sepia(100%) saturate(1500%) hue-rotate(3deg) brightness(110%);
+}
 .carte{
     padding: 30px 30px 30px 0;
 }
 .carte img{
     margin-bottom: 30px;
 }
+
+.carte img{
+    transition: transform 0.3 ease;
+}
+
+.carte img:hover{
+    transform: scale(1.1);
+}
+
 .description{
     margin-bottom: 40px;
 }
@@ -207,14 +239,13 @@ nav ul li a {
 }
 .image-bat img {
     flex: 1;
-    height: 241px;
-    margin-top: 5px;
+    height: 100%;
 }
 .last-para {
     font-size: 12px;
     border: 2px solid #000;
     padding: 15PX;
-    background-image:  linear-gradient(to right, rgba(237, 222, 191, 1) -6%, rgb(46 63 69) 3%);
+    background-image: linear-gradient(to bottom right,rgb(113, 112, 101) 12%, rgb(46 63 69) 60%);
     transition: transform 0.3s linear;
     border: none;
     cursor: pointer;
@@ -224,7 +255,16 @@ nav ul li a {
     border-bottom-right-radius: 15px;
 }
 .BA video{
-    margin-top: 206px;
+    margin: 200px 0 ;
+}
+
+video{
+    margin: 0 auto;
+    transition: box-shadow 0.3 ease;
+}
+
+video:hover {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
 }
 
 #multimedia button{
@@ -240,7 +280,7 @@ nav ul li a {
 
 /*mise en forme de prise de contact*/
 #contact {
-    background-color: darkslategray;
+    background-image: linear-gradient(to bottom right,rgb(113, 112, 101) 12%, rgb(46 63 69) 60%);
     padding: 70px 0;
 }
 #contact .form {
@@ -264,47 +304,57 @@ input[type="email"], #selectBox, textarea  {
     border-right: none;
     border-left: none;
     background-color: transparent;
-    width: 80%;
+    width: 95%;
     padding: 8px;
     margin-top: 32px;
     margin-bottom: 32px;
     border-bottom: 1px solid #ccc;
-    color: white;
+    color: rgb(197, 197, 197);
     font-size: 14px;
 }
 
-#selectBox .valeur{
-    color: black;
+.checkbox{
+    color:rgb(197, 197, 197);
+    font-size: 15px;
 }
-#contact .icon img{
-    transform: rotate(90deg);
+
+input[type="checkbox"] {
     width: 20px;
+    height: 15px;
+}
+
+#selectBox .valeur {
+    color: black;
 }
 
 ::-webkit-input-placeholder {
-    color:white;
+    color:rgb(197, 197, 197);
 }
+
 ::-moz-placeholder {
-    color:white;
+    color:rgb(197, 197, 197);
 }
+
 ::-ms-input-placeholder {
-    color:white;
+    color:rgb(197, 197, 197);
 }
+
 ::placeholder{
-    color:white;
+    color:rgb(197, 197, 197);
 }
 
 #contact .news {
     margin-top: 15px;
     border-bottom: 1px solid #ccc;
-    width: 80%;
+    width: 95%;
 }
 
 .buttonGroup {
     padding-top: 30px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     font-size: 10px;
+    gap: 20px;
 }
 .form input[type="radio"] {
     opacity: 0;
@@ -315,8 +365,16 @@ input[type="email"], #selectBox, textarea  {
     padding: 10px;
     cursor: pointer;
     border: 1px solid;
-    border-image: linear-gradient(to right, rgba(237, 222, 191, 0.5) 0%, rgba(137, 0, 8, 0.5) 100%) 1;
+    border-image: linear-gradient(to right, rgba(237, 222, 191, 0.5) 0%, rgba(0, 56, 177, 0.5) 100%) 1;
+    background-image: linear-gradient(to right, rgba(237, 222, 191, 0.4) 0%, rgba(0, 56, 177, 0.4) 100%) ;
 }
+
+.buttonGroup label:hover,
+.buttonGroup input:checked + label {
+    background-image: linear-gradient(to right, rgba(237, 222, 191, 1) 0%, rgba(0, 56, 177, 1) 100%) ;
+    border-image: none;
+    border: none;
+}/* l'effet effet hover est ajouté et il reste actif lorsque les boutton sont cochés */
 
 
 textarea {
@@ -335,42 +393,52 @@ input[type="submit"] {
     padding: 20px ;
     border-radius: 4px;
     cursor: pointer;
-}
-/*les effets hover */
-.logo img:hover {
-    color: var(--yellow-color);
-    filter: sepia(100%) saturate(1500%) hue-rotate(15deg) brightness(110%);
-}
-nav ul a:active,
-nav ul a:hover,
-nav ul a:visited,
-nav ul a:focus {
-    font-weight: bold;
-    color: var(--yellow-color);
-    text-decoration: underline;
+    background-color: transparent;
+    background-image: linear-gradient(to right, rgba(237, 222, 191, 0.4) 0%, rgba(137, 0, 8, 0.4) 100%);
+    transition: transform 0.3s linear;
+    border: none;
 }
 
-.image:hover {
-    font-weight: bold;
-    text-decoration: underline;
-}
-.hero:hover, .mechant:hover {
+input[type='submit']:hover {
     background-image: linear-gradient(to right, rgba(237, 222, 191, 1) 0%, rgba(137, 0, 8, 1) 100%);
 }
 
+/*mise en forme section citation */
 
-
-/* effet des images du contenu */
-.carte img{
-    transition: transform 0.3 ease;
+#replique {
+    margin: 90px;
 }
 
-.carte img:hover{
-    transform: scale(1.1);
+#replique .texte {
+    text-align: center;
 }
-.replique{
-    margin: 0 auto;
+
+#replique .auteur{
+    padding-top: 25px;
+    font-size: 16px;
+    font-family: 'rajdhani';
 }
+
+.guillemet2 {
+    float: right;
+}
+
+/*mise en forme du footer */
+.text-logo{
+    font-size: 15px;
+    padding: 150px 0 30px;
+}
+footer .logo-social {
+    text-align: center;
+}
+footer .social-item {
+    padding: 15px;
+}
+.social-item img:hover {
+   
+    filter: sepia(100%) saturate(1500%) hue-rotate(3deg) brightness(110%);
+}
+
 .foot {
     width: 80%;
     margin: 0 auto;
