@@ -25,7 +25,18 @@ body {
     color: white;
     background-color: black;
     overflow-x: hidden;
+    border-right: #bcbbbd 2px solid;
+    border-left: #bcbbbd 2px solid;
 }
+
+.up {
+    border-top: #bcbbbd 2px solid;
+    position: relative;
+    top: 108px;
+    left: 135px;
+    width: 80%;
+}
+
 
 h1 {
     font-family: 'rajdhani';
@@ -33,27 +44,37 @@ h1 {
     font-weight: bold ;
     margin-bottom: 20px;
 }
+.description {
+    padding: 0 45px;
+}
+.gt{
+    padding: 10px 45px;
+}
 /*mise en forme du header*/
 .container{
-    width: 80%;
-    margin: 0 auto;
+
+    border-right: #bcbbbd 2px solid;
+    border-left: #bcbbbd 2px solid;
 }
 #hero{
     background-image: url(../Illustrations/Bathome1.png);
     height: 100%;
     background-position: top center;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 nav{
     display: flex;
     justify-content: space-between;
     padding: 30px 0;
-    position: sticky;
     top: 0;
+
 }
 
-
+.logo img,.nav-link {
+    margin: 0 45px;
+}
 
 .logo img {
     height: auto;
@@ -148,7 +169,7 @@ nav ul a:focus {
     position: fixed;
     width: 10PX;
     top: 220px;
-    right: 50px;
+    right: 64px;
     gap: 15px;
     z-index: 10;
 }
@@ -157,7 +178,7 @@ nav ul a:focus {
     filter: sepia(100%) saturate(1500%) hue-rotate(3deg) brightness(110%);
 }
 .carte{
-    padding: 30px 30px 30px 0;
+    padding: 0 45px 100px;
 }
 .carte img{
     margin-bottom: 30px;
@@ -220,6 +241,7 @@ nav ul a:focus {
 }
 
 
+
 /*mise en forme des images cinquième section*/
 .content-container {
     display: flex;
@@ -255,7 +277,10 @@ nav ul a:focus {
     border-bottom-right-radius: 15px;
 }
 .BA video{
-    margin: 200px 0 ;
+    margin: 200px 45px;
+    width: 982px;
+    height: 553px;
+    
 }
 
 video{
@@ -272,6 +297,7 @@ video:hover {
     top: 155px;
     background: none;
     border: none;
+    margin: 0 45px
 }
 #multimedia .yellow{
     color: var(--yellow-color);
@@ -406,7 +432,7 @@ input[type='submit']:hover {
 /*mise en forme section citation */
 
 #replique {
-    margin: 90px;
+    margin: 0 auto;
 }
 
 #replique .texte {
@@ -417,6 +443,9 @@ input[type='submit']:hover {
     padding-top: 25px;
     font-size: 16px;
     font-family: 'rajdhani';
+}
+.citation{
+    padding: 30px 45px;
 }
 
 .guillemet2 {
@@ -439,7 +468,7 @@ footer .social-item {
     filter: sepia(100%) saturate(1500%) hue-rotate(3deg) brightness(110%);
 }
 
-.foot {
-    width: 80%;
+footer {
     margin: 0 auto;
+    text-align: center;
 }
