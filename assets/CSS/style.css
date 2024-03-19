@@ -234,8 +234,7 @@ nav ul a:focus {
 }
  .bat img {
     position: absolute;
-    right: 15px;
-    top: 900px;
+    right: 2px;
     height: 200px;
     flex: 1;
 }
@@ -350,8 +349,34 @@ input[type="checkbox"] {
 }
 
 #selectBox .valeur {
-    color: black;
+    color: #fff; 
+
 }
+
+select option[value="option1"] {
+    background: rgb(46 63 69);
+    color: white;
+  }
+  
+  select option[value="option2"] {
+    background: rgb(46 63 69);
+    color: white;
+  }
+  
+  select option[value="option3"] {
+    background: rgb(46 63 69);
+    color: white;
+  }
+  
+  select option[value="option4"] {
+    background: rgb(46 63 69);
+    color: white;
+  }
+
+  select option[value="option5"] {
+    background: rgb(46 63 69);
+    color: white;
+  }
 
 ::-webkit-input-placeholder {
     color:rgb(197, 197, 197);
@@ -374,7 +399,7 @@ input[type="checkbox"] {
     border-bottom: 1px solid #ccc;
     width: 95%;
 }
-
+  
 .buttonGroup {
     padding-top: 30px;
     display: flex;
